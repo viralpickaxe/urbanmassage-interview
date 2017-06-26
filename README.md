@@ -1,6 +1,17 @@
 # Urban Massage Interview Question
 Solution to the Urban Massage Full Stack interview question ( I commited the .env for convinience fyi )
 
+## Solution Notes
+
+### Frontend
+* Built a SPA powered by react, using redux as the global datastore and a custom built object and list store for caching server side objects and lists
+* Additional features include pagination, client side datastore and result filtering
+
+### Backend
+* Simple nodejs REST api with 1 resource `character`. Really not that advanced, just performs simple operations against a mongodb
+
+### Additiona Notes
+* Used my standard project seed/boilerplate for building full stack applications in a single repo, hence why it seems rather large and un-nessesary for this small hack
 
 ## Full Task
 
