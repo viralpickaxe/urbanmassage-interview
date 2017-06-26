@@ -1,0 +1,145 @@
+.CharacterCard {
+
+    @extend .cf;
+
+    border: 2px solid $border-grey;
+    border-radius: 3px;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .CharacterCard__data {
+
+        @extend .cf;
+        padding: 15px;
+        float: left;
+        width: 100%;
+
+        .CharacterCard__dataLeft {
+
+            float: left;
+
+        }
+
+        .CharacterCard__dataName {
+
+            color: $text-verystrong;
+            margin-bottom: 3px;
+            font-size: 16px;
+
+            .CharacterCard__star {
+
+                cursor: pointer;
+                color: $text-light;
+                transition: .2s linear color;
+
+                &:hover {
+                    color: lighten($text-light, 5%);
+                }
+
+                &.CharacterCard__star--active {
+                    
+                    color: $primary;
+
+                    &:hover {
+                        color: lighten($primary, 5%);
+                    }
+
+                }
+
+            }
+
+        }
+
+        .CharacterCard__dataInfo {
+
+            color: $text-light;
+            font-size: 13px;
+            margin-bottom: 1px;
+
+        }
+
+        .CharacterCard__dataStats {
+
+            float: right;
+            @extend .cf;
+
+            .CharacterCard__dataStatsStat {
+
+                width: 55px;
+                margin-left: 20px;
+                text-align: center;
+                float: left;
+
+                .CharacterCard__dataStatsStatTitle {
+                    color: $text-dark;
+                    font-size: 11px;
+                    margin-bottom: 3px;
+                    margin-top: 1px;
+                }
+
+                .CharacterCard__dataStatsStatValue {
+                    color: $text-light;
+                    font-size: 16px;
+                    strong {
+                        color: $primary;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media ( max-width: $desktop-breakpoint ) {
+
+    .CharacterCard .CharacterCard__data {
+
+        .CharacterCard__dataStats {
+
+            float: left;
+            margin-top: 15px;
+            width: 100%;
+
+            .CharacterCard__dataStatsStat {
+
+                width: 20%;
+                margin: 0;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media ( max-width: $tablet-breakpoint ) {
+
+    .CharacterCard .CharacterCard__data {
+
+        .CharacterCard__dataStats {
+
+            float: left;
+            margin-top: 15px;
+            width: 100%;
+            margin-bottom: -10px;
+
+            .CharacterCard__dataStatsStat {
+
+                width: 50%;
+                margin: 0;
+                margin-bottom: 10px;
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,37 @@
+.CreateCharacterPage {
+
+    position: fixed;
+    z-index: 20;
+    background: $white;
+    width: 90%;
+    max-width: 400px;
+    top: 15vh;
+    left: calc(50% - 200px);
+    border-radius: 3px;
+    padding: 30px;
+    box-shadow: 2px 2px 11px -3px #595959;
+
+    .CreateCharacterPage__title {
+
+        color: $text-verystrong;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+
+    }
+
+    .CreateCharacterPage__checkboxes {
+
+        @extend .cf;
+        margin-bottom: 15px;
+
+    }
+
+    .CheckboxGroup {
+
+        float: left;
+        width: calc(100% / 3);
+
+    }
+
+}

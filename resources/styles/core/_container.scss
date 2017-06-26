@@ -1,0 +1,15 @@
+.container {
+
+	margin: 40px 80px;
+
+}
+
+@media ( max-width: $tablet-breakpoint ) {
+
+	.container {
+
+		margin: 30px 25px;
+
+	}
+
+}

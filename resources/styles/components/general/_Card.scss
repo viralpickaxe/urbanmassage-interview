@@ -1,0 +1,22 @@
+.Card {
+
+	@extend .cf;
+	background: $white;
+	box-shadow: 2px 2px 16px -6px #595959;
+	border-radius: 3px;
+	padding: 30px;
+	margin-bottom: 30px;
+
+	&.Card--noPadd {
+		padding: 0;
+	}
+
+	.Card__title {
+
+		color: $text-strong;
+		font-size: 15px;
+		margin-bottom: 20px;
+
+	}
+
+}

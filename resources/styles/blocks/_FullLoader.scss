@@ -1,0 +1,24 @@
+.FullLoader {
+
+	height: 100vh;
+	width: 100vw;
+	background: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.FullLoader__content {
+
+		width: 225px;
+		text-align: center;
+
+	}
+
+	.FullLoader__logo {
+
+		width: 100%;
+		margin-bottom: 15px;
+
+	}
+
+}

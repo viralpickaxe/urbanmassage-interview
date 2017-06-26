@@ -1,0 +1,12 @@
+body {
+
+	background: $background-fill-grey;
+	font-family: "Circular";
+	font-weight: 100;
+
+	&::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+	}
+
+}

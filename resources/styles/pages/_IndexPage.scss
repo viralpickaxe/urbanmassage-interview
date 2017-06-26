@@ -1,0 +1,107 @@
+.IndexPage {
+
+	.IndexPage__top {
+
+		@extend .cf;
+		margin-bottom: 30px;
+
+		.IndexPage__topLeft {
+
+			float: left;
+			color: $text-verystrong;
+			font-size: 41px;
+			font-weight: 500;
+
+
+		}
+
+		.IndexPage__topRight {
+
+			float: right;
+
+		}
+
+	}
+
+	.IndexPage__split {
+
+		@extend .cf;
+
+		.IndexPage__splitLeft {
+
+			float: left;
+			width: 300px;
+
+			.TextInput, .CheckboxGroup {
+				margin-bottom: 25px;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+			
+		}
+
+		.IndexPage__splitRight {
+
+			float: left;
+			width: calc( 100% - 300px );
+			padding-left: 30px;
+			
+		}
+
+	}
+
+	.IndexPage__noResults {
+
+		padding: 35px 30px 30px;;
+
+		.IndexPage__noResultsMessage {
+
+			color: $text-grey;
+			font-size: 15px;
+			text-align: center;
+
+		}
+
+	}
+
+	.IndexPage__loadContainer {
+
+		height: 1640px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&.IndexPage__loadContainer--small {
+			height: 150px;
+			margin-top: 30px;
+		}
+
+	}
+
+}
+
+@media ( max-width: $tablet-breakpoint ) {
+
+	.IndexPage {
+
+		.IndexPage__split {
+
+			.IndexPage__splitLeft {
+
+				width: 100%;
+				
+			}
+
+			.IndexPage__splitRight {
+
+				width: 100%;
+				padding-left: 0;
+				
+			}
+
+		}
+
+	}
+
+}

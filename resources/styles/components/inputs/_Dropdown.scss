@@ -1,0 +1,17 @@
+.Dropdown {
+
+	select {
+
+		width: 100%;
+		padding: 14px 15px;
+		font-size: 14px;
+		font-weight: 500;
+		color: $text-dark;
+		background: $white;
+		border: 2px solid $border-grey;
+		border-radius: 3px;
+		outline: none;
+
+	}
+
+}

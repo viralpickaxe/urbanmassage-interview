@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Full Application Stack",
+            "configurations": [
+                "API",
+                "Frontend"
+            ]
+        }
+    ],
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "API",
+            "program": "${workspaceRoot}/source/api/Main.ts",
+            "cwd": "${workspaceRoot}",
+            "outFiles": [],
+            "sourceMaps": true,
+            "env": {
+                "PORT": "4000"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Frontend",
+            "program": "${workspaceRoot}/source/frontend/Main.ts",
+            "cwd": "${workspaceRoot}",
+            "outFiles": [],
+            "sourceMaps": true,
+            "env": {
+                "PORT": "3000"
+            }
+        }
+    ]
+}

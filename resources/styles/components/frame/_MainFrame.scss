@@ -1,0 +1,43 @@
+.MainFrame {
+
+	.MainFrame__content {
+
+		padding-top: 75px;
+		max-width: 1350px;
+		margin: 0 auto;
+
+	}
+
+	.MainFrame__backdrop {
+
+		cursor: pointer;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: black;
+		z-index: 12;
+		opacity: 0.4;
+		transition: opacity 200ms ease-in-out;
+
+		&.__transition-enter {opacity: 0;}
+		&.__transition-enter.__transition-enter-active {opacity: 0.4;}
+		&.__transition-leave {opacity: 0.4;}
+		&.__transition-leave.__transition-leave-active {opacity: 0; transition-delay: 200ms;}
+
+		&.MainFrame__backdrop--fast {
+
+			transition: opacity 100ms ease-in-out;
+			opacity: 0.4;
+			
+			&.__transitionFast-enter {opacity: 0;}
+			&.__transitionFast-enter.__transitionFast-enter-active {opacity: 0.4;}
+			&.__transitionFast-leave {opacity: 0.4;}
+			&.__transitionFast-leave.__transitionFast-leave-active {opacity: 0; transition-delay: 0;}
+
+		}
+
+	}
+
+}

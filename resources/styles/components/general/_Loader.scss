@@ -1,0 +1,86 @@
+.Loader {
+	width: 50px;
+	height: 50px;
+	margin: 40px auto;
+
+	.Loader__cube {
+		width: 33%;
+		height: 33%;
+		background-color: $primary;
+		float: left;
+		animation: Loading__cube--delay 1.3s infinite ease-in-out;
+	}
+
+	&.Loader--white {
+
+		.Loader__cube {
+
+			background: $white;
+
+		}
+
+	}
+
+	&.Loader--small {
+
+		width: 40px;
+		height: 40px;
+		margin: 20px auto;
+
+	}
+
+	.Loader__cube--1 {
+		animation-delay: 0.2s;
+	}
+
+	.Loader__cube--2 {
+		animation-delay: 0.3s;
+	}
+
+	.Loader__cube--3 {
+		animation-delay: 0.4s;
+	}
+
+	.Loader__cube--4 {
+		animation-delay: 0.1s;
+	}
+
+	.Loader__cube--5 {
+		animation-delay: 0.2s;
+	}
+
+	.Loader__cube--6 {
+		animation-delay: 0.3s;
+	}
+
+	.Loader__cube--7 {
+		animation-delay: 0;
+	}
+
+	.Loader__cube--8 {
+		animation-delay: 0.1s;
+	}
+
+	.Loader__cube--9 {
+		animation-delay: 0.2s;
+	}
+}
+
+@keyframes Loading__cube--delay {
+	0%, 70%, 100% {
+
+		-webkit-transform: scale3D( 1, 1, 1 );
+		transform: scale3D( 1, 1, 1 );
+		//background: $primary;
+
+	}
+
+	35% {
+
+		-webkit-transform: scale3D( 0, 0, 1 );
+		transform: scale3D( 0, 0, 1 );
+		//background: $secondary;
+
+	}
+	
+}

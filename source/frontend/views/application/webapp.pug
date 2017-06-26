@@ -1,0 +1,25 @@
+html
+	head
+		title Urban Massage Interview
+		meta(name='viewport',content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		link(rel='stylesheet',type='text/css',href='/resources/build/webapp.css')
+		link(href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css',rel='stylesheet')
+	body
+		div(id="react_mount")
+			div(class="FullLoader")
+				div(class="FullLoader__content")
+					img(class="FullLoader__logo",src="/resources/images/smalllogo@1x.png",srcset="/resources/images/smalllogo@2x.png 2x")
+					div(class="Loader Loader--small")
+						div(class="Loader__cube Loader__cube--1")
+						div(class="Loader__cube Loader__cube--2")
+						div(class="Loader__cube Loader__cube--3")
+						div(class="Loader__cube Loader__cube--4")
+						div(class="Loader__cube Loader__cube--5")
+						div(class="Loader__cube Loader__cube--6")
+						div(class="Loader__cube Loader__cube--7")
+						div(class="Loader__cube Loader__cube--8")
+						div(class="Loader__cube Loader__cube--9")
+	script(src='/resources/jspm_packages/system.js')
+	script(src='/resources/config.js')
+	script.
+		System.import('/resources/build/app.js').then(function(){System.import("Main")})

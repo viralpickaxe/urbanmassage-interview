@@ -1,0 +1,163 @@
+.CheckboxGroup {
+
+	margin-bottom: 15px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.CheckboxGroup__title {
+
+		font-size: 13px;
+		color: $text-dark;
+		font-weight: 200;
+		margin-bottom: 10px;
+
+	}
+
+	ul {
+
+		li {
+			
+			margin-bottom: 11px;
+			font-size: 13px;
+			color: lighten($text-dark, 3%);
+			font-weight: 200;
+			
+			[type="checkbox"] {
+				
+				position: relative;
+				top: 4px;
+				margin: 0 8px 0 0 ;
+				width: 19px;
+				height: 19px;
+				outline: none;
+				cursor: pointer;
+			
+				&:before {
+
+					transition: transform .4s cubic-bezier(.45,1.8,.5,.75);
+					transform: rotate(-45deg) scale(0, 0);
+				
+					content: "";
+				
+					position: absolute;
+					left: 3px;
+					top: 3px;
+					z-index: 1;
+					width: 13px;
+					height: 6px;
+				
+					border: 2px solid $primary; 
+					border-top-style: none;
+					border-right-style: none;
+
+				}
+			
+				&:checked {
+
+					&:before {
+						transform: rotate(-45deg) scale(1, 1);
+					}
+
+				}
+
+				&:disabled {
+
+					&:before {
+						border-color: lighten($primary, 5%)
+					}
+
+					&:after {
+						background: rgba(210, 210, 210, 0.05);
+					}
+
+				}
+			
+				&:after {
+
+					content: "";
+					
+					position: absolute;
+					top: -2px;
+					left: 0;
+					
+					width: 17px;
+					height: 17px;
+					
+					background: $white;
+					
+					border: 2px solid $border-grey;
+					border-radius: 3px;
+					
+					cursor: pointer;
+
+				}
+
+			}
+
+			[type="radio"] {
+
+				position: relative;
+				top: 4px;
+				margin: 0 8px 0 0 ;
+				width: 19px;
+				height: 19px;
+				outline: none;
+				cursor: pointer;
+				
+				&:before {
+					transition: transform .4s cubic-bezier(.45,1.8,.5,.75);
+					transform: scale(0,0);
+					
+					content: "";
+
+					position: absolute;
+
+					left: 4px;
+					top: 2px;
+					z-index: 1;
+					width: 13px;
+					height: 13px;
+					
+					background: $primary;
+					
+					border-radius: 50%;
+				}
+			
+				&:checked {
+					
+					&:before {
+						transform: scale(1, 1);
+					}
+
+				}
+			
+				&:after {
+					
+					content: "";
+					
+					position: absolute;
+					top: -2px;
+					left: 0;
+					
+					width: 17px;
+					height: 17px;
+					
+					background: $white;
+					
+					border: 2px solid $border-grey;
+					border-radius: 50%;
+				}
+
+			}
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,47 @@
+.Paginator {
+
+	@extend .cf;
+	float: right;
+	margin-top: 15px;
+	border: 2px solid $border-grey;
+	border-radius: 3px;
+
+	.Paginator__button {
+
+		float: left;
+		padding: 9px 7px;
+		color: $text-grey;
+		text-align: center;
+		min-width: 31px;
+		border-right: 1px solid $border-grey;
+		font-size: 14px;
+		cursor: pointer;
+		transition: 0.1s linear color;
+
+		&:hover {
+			color: $text-greyish;
+		}
+
+		&:last-of-type {
+			border-right: none;
+		}
+
+		&.Paginator__button--edge {
+			width: 27px;
+			padding: 10px 5px;
+			font-size: 12px;
+		}
+
+		&.Paginator__button--active {
+			color: $text-dark;
+			cursor: default;
+		}
+
+		&.Paginator__button--disabled {
+			color: lighten($border-grey, 1%);
+			cursor: default;
+		}
+
+	}
+
+}

@@ -1,0 +1,106 @@
+.Button {
+
+	display: inline-block;
+	border-radius: 3px;
+	padding: 12px 20px;
+	min-width: 95px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+
+	background: $primary;
+	color: $white;
+	box-shadow: 2px 2px 11px -3px #595959;
+	transition: .1s linear box-shadow, .1s linear background, .1s linear color;
+
+	.Button__icon-left {
+
+		margin-right: 10px;
+
+	}
+
+	.Button__icon-right {
+
+		margin-left: 10px;
+
+	}
+
+	&:hover {
+
+		background: $primary-hover;
+		box-shadow: 0 0 9px -3px #595959;
+
+	}
+
+	&:disabled,
+	&.Button--disabled {
+
+		cursor: default;
+		background: $primary-disabled;
+		box-shadow: 0 0 9px -3px #595959;
+
+	}
+
+	&.Button--whiteTransparent {
+
+		background: transparent;
+		color: $white;
+		box-shadow: none;
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.1);
+		}
+
+	}
+
+	&.Button--transparent {
+
+		background: transparent;
+		color: $text-light;
+		box-shadow: none;
+
+		&:hover {
+			color: $text-grey;
+		}
+
+	}
+
+	&.Button--green {
+
+		background: $green;
+
+		&:hover {
+			background: $green-hover;
+		}
+
+	}
+
+	&.Button--dottedBorder {
+
+		background: transparent;
+		border: 2px dotted $text-light;
+		box-shadow: none;
+		border-radius: 4px;
+		color: $text-light;
+
+	}
+
+	&.Button--square {
+
+		min-width: 0;
+		width: 41px;
+		height: 41px;
+		padding: 12px;
+		font-size: 16px;
+		
+	}
+
+	&.Button--block {
+
+		width: 100%;
+		
+	}
+
+}
